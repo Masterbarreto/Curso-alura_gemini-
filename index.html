@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site de Filmes</title>
-  <link rel="stylesheet" href="style.css"> 
-  <script type="module" src="app.js"></script> </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <header>
-    <h1>Cinema para Todos</h1>
-  </header>
+    <header>
+        <h1>Cinema para Todos</h1>
+    </header>
 
-  <main>
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Digite o nome do filme">
-      <button type="button" id="search-button">Pesquisar</button>
-    </div>
-    <div id="results">
-      <div class="result">
-        <h2>Título do Filme</h2>
-        <img src="https://image.tmdb.org/t/p/w500/poster_path" alt="Poster do Filme">
-        <p>Sinopse do filme</p>
-      </div>
-    </div>
-  </main>
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Digite o nome do filme">
+            <button onclick="pesquisa()">Pesquisar</button>
+        </div>
+        <section>
+            <div id="results">
+                <div id="search-results"> </div>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2024 Meu Site de Filmes</p> </footer>
+    <footer>
+        <p>&copy; 2024 Meu Site de Filmes</p>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
