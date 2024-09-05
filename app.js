@@ -1,4 +1,3 @@
-import { dadosFilmes } from './dados.js';
 
 function pesquisa() {
     console.log('master')
@@ -9,7 +8,7 @@ console.log(dadosFilmes[0].genero);
 let Resultados=''
 
 for (let filme of dadosFilmes) {
-    Resultados += `
+    Resultados += 
     <div class="card">
         <h2>${filme.titulo}</h2>
         <p><strong>Ano:</strong> ${filme.ano}</p>
@@ -21,7 +20,7 @@ for (let filme of dadosFilmes) {
         <p><strong>Duração:</strong> ${filme.duração} minutos</p>
         <p><strong>Idioma original:</strong> ${filme.idiomaOriginal}</p>
     </div>
-    `;
+    ;
 }
 
 section.innerHTML = Resultados;
