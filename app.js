@@ -6,8 +6,13 @@ import { dadosFilmes } from './dados.js';
 
 document.querySelector("#botao-pesquisar").addEventListener("click", () => {
     let section = document.getElementById('search-results');
-console.log(dadosFilmes[0].genero);
+
+let camopoPesquisa = document.getElementById('search-results')
+
+console.log(camopoPesquisa).value
+
 let Resultados = ''
+
 
 for (let filme of dadosFilmes) {
     Resultados +=
